@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".FirstFragment">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <RadioGroup
+                    android:id="@+id/ft_radioGroup"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:textAlignment="center"
+                        android:textColor="@drawable/tab_text"
+                        android:background="@drawable/tab_bg"
+                        android:text="今日"/>
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="本周"
+                        android:layout_weight="1"
+                        android:textColor="@drawable/tab_text"
+                        android:background="@drawable/tab_bg"
+                        android:button="@null"
+                        android:textAlignment="center"/>
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="本月"
+                        android:layout_weight="1"
+                        android:textColor="@drawable/tab_text"
+                        android:background="@drawable/tab_bg"
+                        android:button="@null"
+                        android:textAlignment="center"/>
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="本年"
+                        android:layout_weight="1"
+                        android:textColor="@drawable/tab_text"
+                        android:background="@drawable/tab_bg"
+                        android:button="@null"
+                        android:textAlignment="center"/>
+
+            </RadioGroup>
+            <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+            <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chart"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp">
+            </com.github.mikephil.charting.charts.LineChart>
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

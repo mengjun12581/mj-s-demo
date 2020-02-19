@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".ThirdFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.mj.kotlindemo.view.LoadingView
+            android:id="@+id/loadingView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lv_loading_tv="正在加载，请稍后..."
+            app:lv_empty_tv="暂无数据"
+            app:lv_error_tv="加载失败，点击重试"
+            app:lv_loading_img="@drawable/lock"
+            app:lv_empty_img="@drawable/lock"
+            app:lv_error_img="@drawable/lock">
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </com.mj.kotlindemo.view.LoadingView>
+
+
+</FrameLayout>

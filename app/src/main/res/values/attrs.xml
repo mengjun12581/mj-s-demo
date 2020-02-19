@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingView">
+        <!--空布局-->
+        <attr name="lv_empty_view" format="reference"/>
+        <attr name="lv_empty_img" format="reference"/>
+        <attr name="lv_empty_tv" format="string"/>
+        <!--错误布局-->
+        <attr name="lv_error_view" format="reference"/>
+        <attr name="lv_error_img" format="reference"/>
+        <attr name="lv_error_tv" format="string"/>
+        <!--加载中布局-->
+        <attr name="lv_loading_view" format="reference"/>
+        <attr name="lv_loading_img" format="reference"/>
+        <attr name="lv_loading_tv" format="string"/>
+    </declare-styleable>
+</resources>
